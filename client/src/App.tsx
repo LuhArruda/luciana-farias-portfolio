@@ -18,12 +18,10 @@ function Router() {
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/profile" component={Profile} />
-        {/* Rota estática declarada antes da dinâmica para evitar conflitos de roteamento */}
         <Route path="/services" component={Services} />
         <Route path="/service/:serviceName" component={ServiceDetail} />
         <Route path="/contact" component={Contact} />
         <Route path="/404" component={NotFound} />
-        {/* Final fallback route */}
         <Route component={NotFound} />
       </Switch>
     </>

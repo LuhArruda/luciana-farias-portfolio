@@ -8,9 +8,9 @@ export default function ScrollToTop() {
     window.scrollTo({
       top: 0,
       left: 0,
-      behavior: 'smooth', // Deixa a subida suave, com efeito legal
+      behavior: 'smooth', 
     });
   }, [location]);
 
-  return null; // Este componente não renderiza nada na tela
+  return null; 
 }

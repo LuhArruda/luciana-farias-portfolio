@@ -1,12 +1,3 @@
-/**
- * Hero Component
- * 
- * Design Philosophy: Minimalismo Corporativo
- * - Layout assimétrico com texto à esquerda
- * - Imagem à direita com efeito de profundidade
- * - CTA destacado em laranja
- * - Tipografia hierárquica com Poppins Bold
- */
 import heroProfileImg from '@/assets/hero-profile.png';
 
 

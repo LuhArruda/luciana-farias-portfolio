@@ -1,13 +1,3 @@
-/**
- * ServiceCard Component
- * 
- * Design Philosophy: Minimalismo Corporativo
- * - Cards com efeito hover de elevação
- * - Imagem no topo com overlay de cor
- * - Texto com transição suave
- * - Interatividade clara com mudança de cor
- */
-
 import { useState } from 'react';
 
 interface ServiceCardProps {

@@ -29,7 +29,6 @@ export default function Profile() {
 
   return (
     <>
-      {/* 1. O Menu fixo no topo */}
       <Navigation />
 
       <div className="min-h-screen bg-[#00051d] text-white font-sans pt-32">
@@ -101,7 +100,6 @@ export default function Profile() {
         </div>
       </div>
 
-      {/* 2. O Rodapé no final de tudo */}
       <Footer />
     </>
   );

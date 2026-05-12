@@ -70,7 +70,6 @@ export default function Navigation() {
               </Link>
             ))}
             
-            {/* Corrigido para utilizar a rota correta do Wouter */}
             <Link href="/contact">
               <a
                 className="px-6 py-3 bg-[#FF9D5C] text-white rounded-lg hover:bg-[#FF8A3D] transition-all text-center font-semibold cursor-pointer"

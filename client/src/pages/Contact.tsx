@@ -11,7 +11,6 @@ export default function Contact() {
         <div className="container mx-auto px-4">
           
           <div className="max-w-5xl mx-auto">
-            {/* Título com correção do corte de letras e espaçamento */}
             <h1 className="text-4xl md:text-5xl font-bold mb-6 pt-2 pb-4 bg-gradient-to-r from-white to-gray-500 bg-clip-text text-transparent leading-tight">
               Vamos construir algo juntos?
             </h1>
@@ -21,7 +20,6 @@ export default function Contact() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
               
-              {/* Lado Esquerdo: Informações com links reais */}
               <div className="space-y-8">
                 <a href="mailto:lucianafariasarruda@gmail.com" className="flex items-center gap-4 group cursor-pointer">
                   <div className="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center border border-white/10 group-hover:border-[#FF9D5C] transition-all">
@@ -54,7 +52,6 @@ export default function Contact() {
                 </a>
               </div>
 
-              {/* Lado Direito: Formulário com Formspree */}
               <div className="bg-white/5 p-8 rounded-[40px] border border-white/10 shadow-2xl">
                 <form action="https://formspree.io/f/xlgzrwdw" method="POST" className="space-y-6">
                   <div>

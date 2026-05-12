@@ -1,12 +1,3 @@
-/**
- * Services Component
- * * Design Philosophy: Minimalismo Corporativo
- * - Grid de cards de serviço
- * - Fundo alternado com cinza claro
- * - Título em Poppins Bold
- * - Espaçamento generoso
- */
-
 import ServiceCard from './ServiceCard';
 import frontendImg from '@/assets/frontend.png';
 import lowcodeImg from '@/assets/outsystems.png';
@@ -31,7 +22,6 @@ const services = [
     hiddenTitle: 'OutSystems',
     hiddenDescription: 'Com a abordagem low-code, consigo acelerar o desenvolvimento de sistemas complexos e personalizados, garantindo robustez e segurança, sem abrir mão da performance.',
   },
-  // --- NOVO CARD DE IA ---
   {
     icon: ia1Img, 
     title: 'Inteligência Artificial',
@@ -77,7 +67,6 @@ export default function Services() {
           <div className="w-16 h-1 bg-[#FF9D5C] mx-auto"></div>
         </div>
 
-        {/* Grid de Cards - Agora com 6 itens fecha o grid perfeitamente em 3 colunas */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <ServiceCard

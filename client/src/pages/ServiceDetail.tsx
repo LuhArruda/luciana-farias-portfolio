@@ -30,7 +30,6 @@ export default function ServiceDetail() {
     );
   }
 
-  // Converte o parâmetro da URL de volta para o título formatado
   const serviceTitle = params.serviceName
     .split('-')
     .map(word => {
@@ -39,7 +38,6 @@ export default function ServiceDetail() {
     })
     .join(' ');
 
-  // Mapeamento dos ícones para cada serviço
   const getServiceIcon = (title: string) => {
     switch (title) {
       case 'Desenvolvimento OutSystems':
@@ -61,7 +59,6 @@ export default function ServiceDetail() {
     }
   };
 
-  // Descrição detalhada conforme o card selecionado
   const getServiceDescription = (title: string) => {
     switch (title) {
       case 'Desenvolvimento OutSystems':
@@ -87,18 +84,15 @@ export default function ServiceDetail() {
     <>
       <Navigation />
       
-      {/* Redução do paddingTop de 32 para 24 e paddingBottom ajustado para manter a coesão */}
       <div className="min-h-screen bg-[#00051d] text-white pt-24 pb-12">
         <div className="container mx-auto px-4">
           
-          {/* Botão de Retorno - Espaçamento reduzido de 12 para 6 */}
           <Link href="/services">
             <span className="inline-flex items-center gap-2 text-[#FF9D5C] font-semibold text-sm hover:underline cursor-pointer select-none mb-6">
               <ArrowLeft size={16} /> Voltar para Serviços
             </span>
           </Link>
 
-          {/* Cabeçalho do Detalhe - Espaçamento ajustado */}
           <div className="max-w-4xl mb-12 flex flex-col md:flex-row md:items-center gap-6">
             <div className="w-20 h-20 bg-[#00051d] border border-white/10 rounded-3xl flex items-center justify-center shrink-0">
               {getServiceIcon(serviceTitle)}
@@ -115,10 +109,8 @@ export default function ServiceDetail() {
 
           <hr className="border-white/10 my-8" />
 
-          {/* Seção de Conteúdo e Benefícios */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             
-            {/* Coluna Principal: Sobre a Solução */}
             <div className="lg:col-span-2 space-y-8">
               <h2 className="text-2xl font-bold text-white">Sobre a Solução</h2>
               <p className="text-gray-300 leading-relaxed text-lg">
@@ -150,7 +142,6 @@ export default function ServiceDetail() {
               </ul>
             </div>
 
-            {/* Sidebar / CTA */}
             <div className="bg-white/5 p-8 rounded-[32px] border border-white/10 flex flex-col justify-between h-auto shadow-2xl">
               <div>
                 <h3 className="text-2xl font-bold mb-4 text-[#FF9D5C]">Precisa de ajuda com este serviço?</h3>
